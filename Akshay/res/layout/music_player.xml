@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/piano"
+    tools:context="com.akshay.akshay.MusicPlayer" >
+    
+    <LinearLayout
+                android:id="@+id/linearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:background="@color/action" >
+
+                <ImageButton
+                    android:id="@+id/back"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_marginRight="75dp"
+                    android:background="@drawable/back"
+                    android:onClick="back" />
+
+                <ImageButton
+                    android:id="@+id/play"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/play"
+                    android:onClick="play" />
+
+                <ImageButton
+                    android:id="@+id/next"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_marginLeft="75dp"
+                    android:background="@drawable/next"
+                    android:onClick="next" />
+            </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearlayout"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="73dp"/>
+    <!-- 
+        android:progressDrawable="@drawable/custom_seekbar"
+        android:thumb="@drawable/thumb" /> -->
+
+    <TextView
+        android:id="@+id/musicName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekBar1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="Martin Garrix - Animals"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+    <SlidingDrawer
+        android:id="@+id/slide_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:content="@+id/content"
+        android:handle="@+id/handle" >      
+
+            <TextView
+                android:id="@+id/handle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Platlist"
+                android:textSize="16sp" 
+                android:background="@color/action"/>
+        
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="226dp"
+            android:background="#fff"
+            android:orientation="vertical" >
+
+           <ListView
+        android:id="@+id/listView_songList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    </ListView>
+
+            
+
+        </LinearLayout>
+    </SlidingDrawer>
+
+</RelativeLayout>

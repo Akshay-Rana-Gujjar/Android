@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Akshay</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_slider">Slider</string>
+    <string name="title_activity_music_player">Music Player</string>
+    <string name="title_activity_tabs">Tabs</string>
+    <string name="title_activity_browser">Browser</string>
+    <string name="title_activity_flipper">Flipper</string>
+    <string name="title_activity_save_and_load_data">Save And Load Data</string>
+
+</resources>

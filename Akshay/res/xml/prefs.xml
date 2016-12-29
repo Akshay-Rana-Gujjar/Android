@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+<CheckBoxPreference
+    android:title="Show Screen"
+    android:summary="show/hide starting screen"
+    android:defaultValue="true"
+    android:key="checkbox"/>
+    
+<ListPreference
+    android:entries="@array/list"
+    android:entryValues="@array/list_value"
+    android:title="Color"
+    android:summary="Starting Screen Color"
+    android:key="list"
+    /> 
+    <ListPreference
+    android:entries="@array/list1"
+    android:entryValues="@array/list_value1"
+    android:title="Speed"
+    android:summary="Speed of ball"
+    android:key="list1"
+    />    
+
+</PreferenceScreen>
